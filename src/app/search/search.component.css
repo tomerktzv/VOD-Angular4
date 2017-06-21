@@ -1,4 +1,25 @@
-p {
-  font-size: 50px;
-  color: black;
+select {
+  /*float: left;*/
+  display: inline-block;
+  margin: auto;
+  width: 250px;
+  font-family: 'Prosto One', cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#holder {
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+}
+
+span {
+  margin-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
 }

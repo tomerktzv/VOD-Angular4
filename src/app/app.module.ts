@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { sharedApiService } from './sharedServices/sharedServices';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,12 +30,10 @@ import { SearchComponent } from './search/search.component';
     RouterModule.forRoot([
       { path: '', redirectTo: 'agenda', pathMatch: 'full'},
       { path: 'agenda', component: HomepageComponent},
-      { path: 'search', component: SearchComponent},
-      { path: 'page2', component: HomepageComponent},
-      { path: 'page3', component: HomepageComponent}
+      { path: 'filterByID', component: SearchComponent}
     ])
   ],
-  providers: [],
+  providers: [sharedApiService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

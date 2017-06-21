@@ -1,5 +1,5 @@
 <h1 class="col-md-12">What's on the Agenda?</h1>
-<ul class="tile col-md-5" *ngFor="let movie of films" [hidden]="isErr">
+<ul class="tile col-md-5" *ngFor="let movie of films" [hidden]="isErr" id="moviesBoxes">
   <!--<li class="title-news">ID - {{ movie.movies[0].id }}</li>-->
   <h2>Movies Released On {{ movie.date }}</h2>
   <li class="title-news">{{ movie.movies[0].id }} - {{ movie.movies[0].name }} </li>

@@ -12,7 +12,4 @@ export class NavigationComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSelect(component: string) {
-    this.featureSelected.emit(component);
-  }
 }
