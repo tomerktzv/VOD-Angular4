@@ -16,8 +16,8 @@
   </select>
   <span class="glyphicon glyphicon-search" (click)="getMovieByInfo(movieDate, movieName)"></span>
 </div>
+  <ul *ngFor="let movie of films" class="tile col-md-5 moviesBoxes">
+    <h2>Movies Released On {{ movie.date }}</h2>
+    <li class="title-news">{{ movie.movie['id'] }} - {{ movie.movie['name'] }}</li>
+  </ul>
 
-<ul class="tile col-md-5" *ngFor="let movie of films" id="moviesBoxes">
-  <h2>Movies Released On {{ movie.date }}</h2>
-  <li class="title-news">{{ movie.movie['id'] }} - {{ movie.movie['name'] }}</li>
-</ul>

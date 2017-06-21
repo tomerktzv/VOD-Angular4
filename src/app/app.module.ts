@@ -26,7 +26,8 @@ import { SearchComponent } from './search/search.component';
     RouterModule.forRoot([
       { path: '', redirectTo: 'agenda', pathMatch: 'full'},
       { path: 'agenda', component: HomepageComponent},
-      { path: 'filterByID', component: SearchComponent}
+      { path: 'filterByDateAndName', component: SearchComponent},
+      { path: 'filterByName', component: SearchComponent} // NEED TO CHANGE COMPONENT
     ])
   ],
   providers: [sharedApiService, {provide: LocationStrategy, useClass: HashLocationStrategy}],

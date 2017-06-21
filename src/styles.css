@@ -21,7 +21,7 @@ h1 {
   font-family: 'Bangers', cursive;
 }
 
-#moviesBoxes {
+.moviesBoxes {
   /*list-style-type: none;*/
   list-style-image: url('assets/movie.png');
   font-size: 15px;
@@ -38,7 +38,7 @@ h2 {
   margin-left: 15px;
 }
 
-p, #moviesBoxes > li {
+p, .moviesBoxes > li {
   margin-left: 35px;
   font-size: 20px;
 }

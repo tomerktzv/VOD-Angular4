@@ -2,7 +2,7 @@ select {
   /*float: left;*/
   display: inline-block;
   margin: auto;
-  width: 250px;
+  width: 45%;
   font-family: 'Prosto One', cursive;
   font-size: 20px;
   margin-bottom: 10px;
@@ -10,6 +10,7 @@ select {
 }
 
 #holder {
+  padding-left: 5px;
   background: rgba(255, 255, 255, 0.6);
   display: block;
   border: 2px solid #333333;

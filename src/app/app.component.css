@@ -3,13 +3,13 @@
   padding: 0;
 }
 
-app-header {
-  float: left;
-  width: 30%;
-  height: 100px;
-  display: block;
-  background: rgba(255, 255, 255, 0.8);
-}
+/*app-header {*/
+  /*float: left;*/
+  /*width: 30%;*/
+  /*height: 100px;*/
+  /*display: block;*/
+  /*background: rgba(255, 255, 255, 0.8);*/
+/*}*/
 
 app-navigation {
   /*width: 100%;*/
