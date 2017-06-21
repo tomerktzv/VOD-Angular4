@@ -1,0 +1,8 @@
+<h1 class="col-md-12">What's on the Agenda?</h1>
+<ul class="tile col-md-5" *ngFor="let movie of films" [hidden]="isErr">
+  <!--<li class="title-news">ID - {{ movie.movies[0].id }}</li>-->
+  <h2>Movies Released On {{ movie.date }}</h2>
+  <li class="title-news">{{ movie.movies[0].id }} - {{ movie.movies[0].name }} </li>
+  <li class="title-news">{{ movie.movies[1].id }} - {{ movie.movies[1].name }} </li>
+</ul>
+<!--<div class="error col-lg-12" *ngIf="isErr">Server is too busy, please try later</div>-->

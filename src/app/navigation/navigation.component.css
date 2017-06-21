@@ -1,0 +1,36 @@
+nav {
+  width: 100%;
+  float: left;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#logo {
+  font-size: 40px;
+  color: #333333;
+  font-family: 'Frijole', cursive;
+}
+
+#logo:hover {
+  color: #333333;
+}
+
+nav ul {
+  float: right;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+li a {
+  font-size: 20px;
+  color: #333333;
+}
+
+li:hover a{
+  font-size: 21px;
+}
+
+/*li:active a{*/
+  /*text-decoration: none;*/
+/*}*/
