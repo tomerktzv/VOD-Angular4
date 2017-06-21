@@ -7,8 +7,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LogoComponent } from './header/logo/logo.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import {RouterModule} from "@angular/router";
 import { HomepageComponent } from './homepage/homepage.component';
@@ -17,8 +15,6 @@ import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LogoComponent,
     NavigationComponent,
     HomepageComponent,
     SearchComponent,
