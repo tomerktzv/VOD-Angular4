@@ -11,8 +11,6 @@ export class SearchComponent implements OnInit {
   movieName: string;
   movieDate: string;
   films : movie[];
-  movieData : any;
-  isErrOccurred : boolean = false;
   isInvalidQuery : boolean = false;
 
   constructor(private sharedService : sharedApiService) { }

@@ -7,6 +7,7 @@ export class movie {
   date: string;
   id: number;
   name: string;
+  error: string;
 
   public static sortByID (unsortedNews: movie[]) {
     return unsortedNews.sort((movie1, movie2) => {

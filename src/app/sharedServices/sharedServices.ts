@@ -24,4 +24,12 @@ export class sharedApiService {
       .then(response => response.json() as movie[])
       .catch(err => err.json());
   }
+
+  getMovieByName(_name: string): Promise<movie[]> {
+    return this.http.post(`${this.url}/getOrederedMovie/`, {movieName:_name})
+      .toPromise()
+      .then(response => response.json() as movie[])
+      .catch(err => err.json());
+  }
+
 }

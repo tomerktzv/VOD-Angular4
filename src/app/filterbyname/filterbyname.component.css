@@ -1,6 +1,14 @@
-
 span {
   margin-left: 10px;
   font-size: 30px;
   cursor: pointer;
+}
+
+
+#holder {
+  width: 30%;
+}
+
+select {
+  width: 80%;
 }

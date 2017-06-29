@@ -13,6 +13,7 @@ body {
   margin: 0px;
 }
 
+
 h1 {
   font-size: 50px;
   margin: 0;
@@ -41,4 +42,27 @@ h2 {
 p, .moviesBoxes > li {
   margin-left: 35px;
   font-size: 20px;
+}
+
+
+.selections {
+  /*float: left;*/
+  display: inline-block;
+  margin: auto;
+  width: 45%;
+  font-family: 'Prosto One', cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+#holder {
+  padding-left: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  border: 2px solid #333333;
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
 }

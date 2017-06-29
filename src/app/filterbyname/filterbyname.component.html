@@ -1,11 +1,5 @@
-<h1>Filter By Date and Name</h1>
+<h1>Filter By Name</h1>
 <div id="holder">
-  <select class="form-control" [(ngModel)] = "movieDate" class="selections">
-    <option disabled selected>Choose a Date</option>
-    <option value="2017-05-07">2017-05-07</option>
-    <option value="2017-05-06">2017-05-06</option>
-    <option value="2017-05-05">2017-05-05</option>
-  </select>
   <select class="form-control" [(ngModel)] = "movieName" class="selections">
     <option disabled selected>Choose a Name</option>
     <option value="Titanic1">Titanic1</option>
@@ -14,10 +8,9 @@
     <option value="Titanic5">Titanic5</option>
     <option value="Titanic6">Titanic6</option>
   </select>
-  <span class="glyphicon glyphicon-search" (click)="getMovieByInfo(movieDate, movieName)"></span>
+  <span class="glyphicon glyphicon-search go-search" (click)="getMovieByName(movieName)"></span>
 </div>
 <ul *ngFor="let movie of films" class="tile col-md-5 moviesBoxes">
   <h2>Movies Released On {{ movie.date }}</h2>
   <li>{{ movie.movie['id'] }} - {{ movie.movie['name'] }}</li>
 </ul>
-
